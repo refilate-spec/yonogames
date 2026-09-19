@@ -569,9 +569,9 @@ function openModal(app) {
     currentActiveApp = app;
 
     document.getElementById('modal-icon').src = app.image;
+document.getElementById('modal-title').innerHTML = app.name + ' <i class="fa-solid fa-shield-check text-[12px] animate-bounce text-primary ml-1"></i>';
 
-    document.getElementById('modal-title').innerText = app.name;
-
+    
     document.getElementById('modal-bonus').innerHTML =
         `<i class="fa fa-gift"></i> ${app.bonus}`;
 
